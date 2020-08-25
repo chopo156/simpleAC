@@ -15,7 +15,7 @@ AddEventHandler("entityCreating", function(entity)
         end
 
         if modules.entity_rate_limiter_alerts[entity_rate_limiter[source]] ~= nil then
-            print("^1"..prefix.."^7: Entity limiter for ["..source.."] = "..entity_rate_limiter[source])
+            print("^1"..prefix.."^7: Entity counter for [^3"..source.."^7] = "..entity_rate_limiter[source].." reached in less than ^3"..modules.entity_rate_limiter_reset.."^7s")
         end
 
         if entity_rate_limiter[source] >= modules.entity_rate_limiter_limit then
