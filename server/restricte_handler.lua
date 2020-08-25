@@ -22,7 +22,7 @@ end
 
 local function OnPlayerConnecting(name, setKickReason, deferrals)
     local source = source
-    local identifiers = GetPlayerIdentifiers(player)
+    local identifiers = GetPlayerIdentifiers(source)
 
     for _, v in pairs(identifiers) do
         if restricted[v] ~= nil then
