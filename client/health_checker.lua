@@ -19,7 +19,7 @@ function InitHealthChecks()
                 SetEntityHealth(pPed, pHeatlh + 2)
             end
 
-            Wait(1000)
+            Wait(5000)
         end
     end)
 end
