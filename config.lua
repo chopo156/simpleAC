@@ -14,5 +14,15 @@ violations = {
         text = "Client token violation.",
         webhook = "",
         restrict_client = true,
-    }
+    },
+    [2] = {
+        text = "Alive status token violation.",
+        webhook = "",
+        restrict_client = true,
+    },
+    [3] = {
+        text = "Alive status violation.",
+        webhook = "",
+        restrict_client = true,
+    },
 }
