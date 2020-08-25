@@ -9,6 +9,10 @@ display_console_restrict_add = true
 alive_check = true
 alive_check_cooldown = 1 -- In minutes.
 
+modules = {
+    healths_check = true, -- This disable health regen
+}
+
 violations = {
     [1] = {
         text = "Client token violation.",
@@ -22,6 +26,11 @@ violations = {
     },
     [3] = {
         text = "Alive status violation.",
+        webhook = "",
+        restrict_client = true,
+    },
+    [4] = {
+        text = "Health check violation.",
         webhook = "",
         restrict_client = true,
     },
