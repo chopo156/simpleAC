@@ -6,6 +6,7 @@ AddEventHandler("AC:RegisterClient", function(token)
         client_tokens[source] = {}
         client_tokens[source].token = token
         client_tokens[source].ids = GetPlayerIdentifiers(source)
+        TriggerClientEvent("AC:InitModules", source, modules)
     else
         if violations[1].restrict_client then
             RestrictPlayer(source)
