@@ -1,4 +1,4 @@
-local client_tokens = {}
+client_tokens = {}
 
 RegisterNetEvent("AC:RegisterClient")
 AddEventHandler("AC:RegisterClient", function(token)
