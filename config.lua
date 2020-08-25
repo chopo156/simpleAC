@@ -11,6 +11,7 @@ alive_check_cooldown = 1 -- In minutes.
 
 modules = {
     healths_check = true, -- This disable health regen
+    spectator = true,
 }
 
 violations = {
@@ -31,6 +32,11 @@ violations = {
     },
     [4] = {
         text = "Health check violation.",
+        webhook = "",
+        restrict_client = true,
+    },
+    [5] = {
+        text = "Spectator check violation.",
         webhook = "",
         restrict_client = true,
     },
