@@ -30,7 +30,7 @@ modules = {
     }
 }
 
-blacklisted_entity = {
+blacklisted_entity = { -- You can add anything. Vehicles, ped, props. Everything here can not be spawned and networked with other player ( Synced )
     [GetHashKey("ambulance")] = true,
     [GetHashKey("police")] = true,
     [GetHashKey("police2")] = true,
