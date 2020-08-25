@@ -2,12 +2,11 @@ local clients_alive = {}
 Citizen.CreateThread(function()
     if not alive_check then return end
     while true do
-        Wait(alive_check_cooldown*60*1000)
         print("^1"..prefix.."^7: Checking alive status for all clients ...")
         clients_alive = {}
 
         for k,v in pairs(GetPlayers()) do
-            clients_alive[source] = false
+            clients_alive[v] = false
             TriggerClientEvent("AC:IsAlive", v)
         end
 
@@ -26,6 +25,7 @@ Citizen.CreateThread(function()
         end
 
         print("^1"..prefix.."^7: Alive status check for all clients done!")
+        Wait(alive_check_cooldown*60*1000)
     end
 end)
 
