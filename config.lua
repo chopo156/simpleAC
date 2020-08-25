@@ -6,6 +6,9 @@ restricte_ip = false -- Can cause false restrict / ban if cheater is using VPN o
 
 display_console_restrict_add = true
 
+alive_check = true
+alive_check_cooldown = 1 -- In minutes.
+
 violations = {
     [1] = {
         text = "Client token violation.",
